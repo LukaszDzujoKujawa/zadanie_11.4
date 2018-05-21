@@ -16,7 +16,7 @@ iPhone8plus.printInfo();
 SamsungS9.printInfo();
 HuaweiP20Pro.printInfo();
 
-Phone.prototype.winterSale = function () {
+Phone.prototype.springSale = function () {
   let date;
   for(date = 0; date <= 31; date++) {
     if(date >= 20 && date < 21) {
@@ -25,6 +25,6 @@ Phone.prototype.winterSale = function () {
   }
 }
 
-iPhone8plus.winterSale();
-SamsungS9.winterSale();
-HuaweiP20Pro.winterSale();
+iPhone8plus.springSale();
+SamsungS9.springSale();
+HuaweiP20Pro.springSale();
