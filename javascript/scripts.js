@@ -9,22 +9,22 @@ Phone.prototype.printInfo = function() {
 }
 
 const iPhone8plus = new Phone('Apple', 3450, 'srebrny');
-const SamsungS9 = new Phone('Samsung', 2200, 'złoty');
-const HuaweiP20Pro = new Phone('Huawei', 3400 , 'brąz');
+const samsungS9 = new Phone('Samsung', 2200, 'złoty');
+const huaweiP20Pro = new Phone('Huawei', 3400 , 'brąz');
 
 iPhone8plus.printInfo();
-SamsungS9.printInfo();
-HuaweiP20Pro.printInfo();
+samsungS9.printInfo();
+huaweiP20Pro.printInfo();
 
 Phone.prototype.springSale = function () {
   let date;
-  for(date = 0; date <= 31; date++) {
-    if(date >= 20 && date < 21) {
+  for (date = 0; date <= 31; date++) {
+    if (date >= 20 && date < 21) {
       console.log('Wiosenna wyprzedaż ' + this.brand + ', kolor ' + this.color + ' cena wynosi ' + this.price * 0.8 + ' zł.');
     }
   }
 }
 
 iPhone8plus.springSale();
-SamsungS9.springSale();
-HuaweiP20Pro.springSale();
+samsungS9.springSale();
+huaweiP20Pro.springSale();
